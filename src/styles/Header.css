@@ -1,0 +1,22 @@
+.header_App {
+  height: 120px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.header_App_wrapper {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header_title {
+  font-size: 24px;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+.header_description {
+  font-size: 14px;
+  color: #999;
+  padding-top: 4px;
+}

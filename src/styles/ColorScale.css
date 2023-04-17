@@ -1,0 +1,138 @@
+.colorScale {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  font-size: 12px;
+  line-height: 1;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 4px 9px;
+  border-radius: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  width: calc(100% - 10px);
+}
+.colorScale_hex {
+  text-transform: uppercase;
+  padding-left: 15px;
+}
+.colorScale_bar_icon {
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  top: 3px;
+}
+.colorScale_bar_icon.dark {
+  left: 93px;
+}
+.colorScale_bar_icon.light {
+  right: 7px;
+}
+.colorScale_bar_icon svg {
+  position: absolute;
+  width: auto;
+  height: 90%;
+  left: 2px;
+  top: 5%;
+  fill: #fff;
+}
+.colorScale_bar {
+  position: absolute;
+  right: 25px;
+  top: 3px;
+  height: 14px;
+  width: calc(100% - 135px);
+  overflow: hidden;
+}
+.colorScale_bar__container {
+  position: absolute;
+  height: 8px;
+  width: 100%;
+  opacity: 0.35;
+  top: 3px;
+  border-radius: 0px 3px 3px 0px;
+}
+.colorScale_bar_range {
+  position: absolute;
+  /* height: 8px;
+  top: 3px; */
+  /* border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.3); */
+  height: 10px;
+  top: 2px;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.colorScale_bar_calculated {
+  position: absolute;
+  height: 2px;
+  top: 6px;
+  border-radius: 0px 1px 1px 0px;
+  background-color: #fff;
+  transition: 0.4s width ease-in-out;
+}
+.colorScale_valid {
+  position: absolute;
+  left: 5px;
+  top: 3px;
+  height: 14px;
+  width: 14px;
+  border-radius: 7px;
+}
+.colorScale_valid_led {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  border-radius: 8px;
+  left: 2px;
+  top: 2px;
+}
+.colorScale_valid.green {
+  background-color: rgba(34, 34, 34, 0.7);
+}
+.colorScale_valid.green .colorScale_valid_led {
+  background-color: #71ff6b;
+}
+.colorScale_valid.red {
+  background-color: rgba(34, 34, 34, 0.7);
+}
+.colorScale_valid.red .colorScale_valid_led {
+  background-color: #ff5500;
+}
+.colorScale_flash {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  left: -10px;
+  top: -10px;
+}
+.colorScale_green_flash {
+  background-color: rgba(112, 255, 107, 0.5);
+  animation-duration: 0.4s; /* durée de l'animation */
+  animation-timing-function: linear; /* type de easing */
+  animation-delay: 0s; /* durée avant le déclenchement */
+  animation-iteration-count: 1; /* nombre de fois où l'animation est jouée */
+  animation-name: flash; /* appel keyframes */
+  animation-fill-mode: forwards; /* empêcher l'animation de revenir au début lorsqu'elle a joué une fois */
+}
+.colorScale_red_flash {
+  background-color: rgba(255, 85, 0, 0.5);
+  animation-duration: 0.4s; /* durée de l'animation */
+  animation-timing-function: linear; /* type de easing */
+  animation-delay: 0s; /* durée avant le déclenchement */
+  animation-iteration-count: 1; /* nombre de fois où l'animation est jouée */
+  animation-name: flash; /* appel keyframes */
+  animation-fill-mode: forwards; /* empêcher l'animation de revenir au début lorsqu'elle a joué une fois */
+}
+
+@keyframes flash {
+  0% {
+    transform: scale(0.3);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}

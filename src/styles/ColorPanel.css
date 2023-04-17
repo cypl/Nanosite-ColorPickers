@@ -1,0 +1,40 @@
+.colorPanel {
+  width: 100%;
+  position: relative;
+  border-top: 1px solid #000;
+}
+.colorPanelGroup_Big .colorPanel {
+  height: 33.33%;
+}
+.colorPanelGroup_Thin .colorPanel {
+  height: 50%;
+}
+
+.colorPanelGroup {
+  height: calc(100vh - 120px);
+  border-right: 1px solid #000;
+  position: relative;
+}
+.colorPanelGroup_Big {
+  width: 40%;
+}
+.colorPanelGroup_Thin {
+  width: 20%;
+}
+.colorPanelGroup_name {
+  background-color: #222;
+  font-size: 10px;
+  line-height: 1;
+  padding: 6px 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #999;
+}
+.colorPanelGroup_container {
+  position: absolute;
+  height: calc(100% - 22px);
+  width: 100%;
+  top: 22px;
+  background-color: #111;
+}

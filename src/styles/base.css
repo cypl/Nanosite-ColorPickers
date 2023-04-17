@@ -1,0 +1,33 @@
+body {
+  padding: 0px;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.4;
+  background-color: #222;
+  color: #fff;
+  position: relative;
+}
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+figure {
+  margin: 0;
+}

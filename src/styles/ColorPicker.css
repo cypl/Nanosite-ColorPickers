@@ -1,0 +1,42 @@
+.colorPicker {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  opacity: 0;
+  transform: scale(0.6);
+  transition: 0.1s opacity ease-in-out,
+    0.2s transform cubic-bezier(0.78, -0.47, 0.35, 1.6);
+}
+.colorPanel:hover .colorPicker {
+  opacity: 1;
+  transform: scale(1);
+  transition: 0.1s opacity ease-in-out,
+    0.2s transform cubic-bezier(0.78, -0.47, 0.35, 1.6);
+}
+.colorPicker_icon_wrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.1s background-color ease-in-out, 0.1s transform ease-in-out;
+}
+.colorPicker_icon_wrapper:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  transform: scale(1.1);
+  transition: 0.1s background-color ease-in-out, 0.1s transform ease-in-out;
+}
+.colorPicker_icon {
+  fill: #fff;
+  width: 35%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.colorInput {
+  display: none;
+}
