@@ -62,7 +62,16 @@ function App() {
     setFunc(event.target.value)
   }
 
-  // function resetColors() {}
+  function resetColors() {
+    setPrimary1(colorStarter.primary1)
+    setPrimary(colorStarter.primary)
+    setPrimary2(colorStarter.primary2)
+    setSecondary1(colorStarter.secondary1)
+    setSecondary(colorStarter.secondary)
+    setSecondary2(colorStarter.secondary2)
+    setClair(colorStarter.clair)
+    setClair2(colorStarter.clair2)
+  }
 
   useEffect(() => {
     document.title = 'Nanosite ColorPickers'
@@ -70,7 +79,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header resetColors={resetColors} />
       <section className="colorsPanel">
         <div className="colorPanelGroup colorPanelGroup_Big">
           <p className="colorPanelGroup_name">Primaires</p>

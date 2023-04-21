@@ -20,3 +20,34 @@
   color: #999;
   padding-top: 4px;
 }
+.header_App_nav {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.btn {
+  font-size: 11px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 2px solid #999;
+  cursor: pointer;
+  transition: 0.05s color ease-in-out, 0.1s border-color ease-in-out,
+    0.1s background-color ease-in-out;
+  margin-left: 15px;
+}
+.btn:hover {
+  color: #222;
+  border-color: #c0c0c0;
+  background-color: #c0c0c0;
+  transition: 0.05s color ease-in-out, 0.1s border-color ease-in-out,
+    0.1s background-color ease-in-out;
+}
+.btn.inactive {
+  opacity: 0.3;
+  pointer-events: none;
+}

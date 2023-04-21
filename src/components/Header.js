@@ -1,4 +1,4 @@
-function Header() {
+function Header({ resetColors }) {
   return (
     <header className="header_App">
       <div className="header_App_wrapper">
@@ -8,6 +8,17 @@ function Header() {
           en vérifiant leurs contrastes pour l'accessibilité.
         </p>
       </div>
+      <nav className="header_App_nav">
+        <span className="btn inactive" onClick={resetColors}>
+          Test RGAA
+        </span>
+        <span className="btn inactive" onClick={resetColors}>
+          Exporter
+        </span>
+        <span className="btn" onClick={resetColors}>
+          Réinitialiser
+        </span>
+      </nav>
     </header>
   )
 }
